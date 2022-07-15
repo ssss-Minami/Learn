@@ -1,0 +1,11 @@
+1.       访问静态成员
+    可以用ClassName::MemberName,
+    也可以用ClassName.MemberNme，
+    但最好用前者，因为很容易就可以判定成员是静态成员。
+
+         访问实例成员
+     只能用ClassName.MemberName，
+     不能用ClassName::MemberName.
+      
+     类的成员中，静态成员的储存空间是固定的，为所有实例共享；
+     不同实例成员有不同的储存空间

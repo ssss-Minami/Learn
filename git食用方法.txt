@@ -1,0 +1,8 @@
+1.配置等略
+2.git add 文件名
+3.git commit -m "更新说明"
+4.git push  成功后有一大段字    以上三个命令为新文件上传必要
+
+
+
+git status 显示当前状态
