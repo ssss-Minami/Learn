@@ -1,0 +1,7 @@
+1.每一个新开的、clear过的终端都要先export ROS_DOMAIN_ID=.......
+
+2. 查看topic数据传输结构
+    先ros2 topic type +topic名（有/）
+ （用topic list -t查,[]内为 包含的包/msg(message)/类型）
+    再ros2 interface show +topic type（无括号）
+3.查service时同理，interface弹出的文本中---之上为request，下为response
