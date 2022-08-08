@@ -1,2 +1,5 @@
 1.中断中不可使用HAI_Delay()，此函数使用SysTick计数，默认优先级低于中断，
    会停在那
+2.中断执行函数....callback须在main之外定义，可在main中声明
+3.一些错误在cubeide上不会显示
+4.记得HAL_TIM_Base_Start_IT开定时器的中断
