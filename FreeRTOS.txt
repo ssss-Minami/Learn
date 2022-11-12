@@ -1,0 +1,29 @@
+1. 任务创建函数 xTaskCreate()
+    BaseType_t xTaskCreate( TaskFunction_t        pvTaskCode,    
+                                             const char *             const pcName,
+                                             uint16_t                   usStackDepth,
+                                             void                        *pvParameters,
+                                             UBaseType_t            uxPriority,
+                                             TaskHandle_t         *pxCreatedTask );
+    pvTaskCode          这是一个函数指针，指向执行任务的函数
+    pcName                任务的描述名称，不用的话可以设为Null
+    usStackDepth       任务栈空间的大小，单位是字（Word）
+    pvParameters       用于传递给任务的参数，不用的话可以设为Null
+    uxPriority              设置任务的优先级，数值越大，等级越高
+    pxCreatedTask     任务的具柄（handle），不用可以设为Null
+    函数的返回值有两个pdPass和pdFail，pdPass表示任务创建成功，相反pdFail表示创建失败，
+    创建失败的原因大多是因为系统没有足够的堆空间来保存任务。
+
+2. 系统时钟信号(Timebase source)可用tim6/tim7，将sistick让给FreeRTOS
+
+3. 调度器的模式
+    模式的选择在FreeRTOSConfig.h头文件中由configUSE_PREEMPTION这个参数决定，
+        为1时是抢占式模式，为0时是合作式模式。用CubeIDE时，API中可通过
+        设置USE_PEEMPTION（抢占） 来选择模式
+    在抢占式模式下，在每次调度器运行时，高优先级的任务会被切换优先执行，
+        当前处于运行状态的低优先级的任务则会立刻进入就绪状态等待运行
+    在合作式模式下，高优先级任务不会抢占当前正在运行状态的低优先级任务，
+        直到低优先级任务完成进入阻塞状态（比如调用osDelay()函数）
+        或就绪状态（比如调用osThreadYield()函数）
+        或者被系统置于挂起状态后才会切换任务
+4. TICK_RATE_HZ设置时间片大小，上限1K Hz 

@@ -1,0 +1,2 @@
+1. printenv | grep ROS查看环境变量，如无则环境没有设置好
+    source /opt/ros/noetic/setup.bash

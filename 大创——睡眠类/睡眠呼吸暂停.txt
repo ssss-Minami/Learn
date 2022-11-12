@@ -1,0 +1,6 @@
+1.C.Alberto Tassinari指出打鼾和嗜睡症是睡眠呼吸暂停综合征的重要诊断指标
+2.睡眠呼吸暂停可导致SWS（NREM3，4）缺乏，且经常中断
+3.呼吸不足能通过呼吸信号和血氧饱和度的下降检测出    P677
+   [1] Adults S . Sleep-related breathing disorders in adults ; Recommendations for syndrome definition and measurement techniques        in clinical research[J]. Sleep, 1999, 22.
+  【】. Young T, Palta M, Dempsey J, Skatrud J, Weber S, Bader S. The occurrence of sleep disordered breathing in middle-aged adults .     New Engl J Med 1993;328:1230-5.
+4.过度依赖唤醒可能会降低睡眠呼吸暂停检测的准确度  同上的参考文献1

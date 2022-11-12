@@ -1,4 +1,7 @@
 1.每一个新开的、clear过的终端都要先export ROS_DOMAIN_ID=.......
+   若要使用ROS2，先将~/.bashrc中末尾的source 改为/opt/ros/galactic/setup.bash
+   sudo gedit ~/.bashrc 以打开此文件
+   网上教程查找ROS1\2切换方法
 
 2. 查看topic数据传输结构
     先ros2 topic type +topic名（有/）
