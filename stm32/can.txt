@@ -1,0 +1,18 @@
+1. 发送ID、接收id等设置 :定义CAN_TxHeaderTypeDef、CAN_RxHeaderTypeDef 
+    IDE :帧格式，标准帧（CAN_ID_STD）/扩展帧（CAN_ID_EXT）
+    RTR：数据帧（CAN_RTR_DATA）、遥控帧（CAN_RTR_REMOTE）
+    DLLC：帧长度，0-8
+2.过滤设置  定义CAN_FilterTypeDef并HAL_CAN_ConfigFilter
+                Filter_1.FilterActivation = ENABLE;
+                Filter_1.FilterMode = CAN_FILTERMODE_IDMASK;
+	Filter_1.FilterScale = CAN_FILTERSCALE_16BIT;
+	Filter_1.FilterFIFOAssignment = CAN_FILTER_FIFO0;
+	Filter_1.FilterIdHigh = 0x0000;
+	Filter_1.FilterIdLow = 0x0000;
+	Filter_1.FilterMaskIdHigh = 0x0000;
+	Filter_1.FilterMaskIdLow = 0x0000;
+	Filter_1.FilterBank = 0;
+   此过滤器设置允许所有帧通过
+3.HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+   HAL_CAN_Start(&hcan1);
+4.波特率需保持一致 

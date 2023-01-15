@@ -3,3 +3,4 @@
     文档“Sleep-Related Breathing Disorders in Adults Recommendations for Syndrome Definition 
      and Measurement Techniques in Clinical Research”P675
 3.对一些测量技术的介绍 同上P677
+4.kappa statistic 用于评判分类器的分类结果与随机分类的差异度   越接近1可靠度越高

@@ -4,3 +4,4 @@
    [1] Adults S . Sleep-related breathing disorders in adults ; Recommendations for syndrome definition and measurement techniques        in clinical research[J]. Sleep, 1999, 22.
   【】. Young T, Palta M, Dempsey J, Skatrud J, Weber S, Bader S. The occurrence of sleep disordered breathing in middle-aged adults .     New Engl J Med 1993;328:1230-5.
 4.过度依赖唤醒可能会降低睡眠呼吸暂停检测的准确度  同上的参考文献1
+5.睡眠呼吸暂停的影响可能更多的表现在因呼吸努力的提高而导致的暂时轻度醒觉而非具体的通气量的减少  同上
