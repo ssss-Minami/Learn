@@ -1,0 +1,12 @@
+1.配置时需在.ioc中设置通道为PWM生成，以及有效电平（极性）（polarity）
+   注意计数方向
+
+2.pwm模式1：计数值小于比较值时输出有效电平，无论计数方向
+   pwm模式2与之相反
+
+3.使用前需开启定时器、开启pwm
+   HAL_TIM_Base_Start(&htim5);
+   HAL_TIM_PWM_Start(&htim5, TIM_CHANNEL_1);
+
+4.设置PWM占空比
+   __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_1, pwm_count);
