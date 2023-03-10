@@ -1,0 +1,5 @@
+1.app = xlw.App(xisible=True, add_book=True)打开一个新的excell表格并创建一个工作簿
+
+2.可用input()等待输入来阻止运行后马上关闭excell
+
+3.打开文件进行操作和保存可能导致报错
