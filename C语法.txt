@@ -3,3 +3,9 @@
 2.sizeof()函数不能用于extern变量，sizeof 的计算发生在代码编译 的时刻
 extern 标注的符号 在链接的时刻解析
 所以 sizeof 不知道 这个符号到底占用了多少空间
+
+3.__packed用于字节对齐，提高存取效率，降低运行性能
+
+4.位段：
+   unsigned a : 2;意为a只占用2bit，相应的取值范围变成0123
+   unsigned b;  b占用了32bit

@@ -1,0 +1,10 @@
+1.iic address: 0x0E（RM C板）
+
+2.CAD0、CAD1引脚悬空为默认状态，此时iic slave addr在7bit下为0x0E，8bit为0x1C
+
+3.  7bit为8bit基础上向右移一位，前补0
+
+4.As initial setting, please set Pulse Duration Control Register, PDCTNL(0x42) =   11000000b (C0H) for 
+performance  optimization.  For low noise  performance,  please  set  Average  Control Register, 
+AVGCNTL(0x41) = 00100100b (24H) for more internal average times. The minimum waiting time 
+between two measurements under low noise performance setup is 6ms (166Hz).

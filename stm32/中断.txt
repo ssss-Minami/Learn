@@ -3,3 +3,4 @@
 2.中断执行函数....callback须在main之外定义，可在main中声明
 3.一些错误在cubeide上不会显示
 4.记得HAL_TIM_Base_Start_IT开定时器的中断
+5.串口接收区满中断优先于串口空闲中断
