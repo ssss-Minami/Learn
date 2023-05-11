@@ -1,10 +1,25 @@
-1.每一个新开的、clear过的终端都要先export ROS_DOMAIN_ID=.......
-   若要使用ROS2，先将~/.bashrc中末尾的source 改为/opt/ros/galactic/setup.bash
+ros1.每一个新开的、clear过的终端都要先export ROS_DOMAIN_ID=.......
+   若要使用ROS2，先将~/.bashrc中末尾的source 改为/opt/ros/humble/setup.bash h	
    sudo gedit ~/.bashrc 以打开此文件
-   网上教程查找ROS1\2切换方法
+   网上教程查找ROS1\2切换方法cl
 
 2. 查看topic数据传输结构
     先ros2 topic type +topic名（有/）
  （用topic list -t查,[]内为 包含的包/msg(message)/类型）
     再ros2 interface show +topic type（无括号）
 3.查service时同理，interface弹出的文本中---之上为request，下为response
+
+4.ros2 topic info /pkgname/TopicName   查看topic信息（publisher\subscripiton）
+
+5.ros2 topic echo /pkgName/TopicName  查看topic发出广播信息
+                    hz                                     查看topic广播频率
+
+6.interface show pkgName/msg/MsgName  查看数据类型
+
+7.rqt
+
+8.创建工作区 mkdir -p ~/工作区名/src
+    在src目录中放入包
+    解决包依赖关系：从工作区根目录运行
+	cd ~/dev_ws
+	rosdep install -i --from-path src --rosdistro eloquent -y

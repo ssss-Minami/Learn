@@ -9,3 +9,5 @@ extern 标注的符号 在链接的时刻解析
 4.位段：
    unsigned a : 2;意为a只占用2bit，相应的取值范围变成0123
    unsigned b;  b占用了32bit
+
+5.multiple defination可能为在头文件中定义在.c中调用造成的，修改方式为头文件extern，.c中定义

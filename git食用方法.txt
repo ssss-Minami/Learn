@@ -4,3 +4,4 @@
 4.git push  成功后有一大段字    以上三个命令为新文件上传必要
 5.git status 显示当前状态
 6.clone失败、无权限时检查ssh密钥，和windows凭据，可删掉再行添加
+7.clone git......   -b branch名     克隆分支
