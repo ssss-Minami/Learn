@@ -13,6 +13,9 @@
 	Filter_1.FilterMaskIdLow = 0x0000;
 	Filter_1.FilterBank = 0;
    此过滤器设置允许所有帧通过
-3.HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+3.开启接收缓冲关注（之后才能MSGpendingCALLBACK）
+HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
    HAL_CAN_Start(&hcan1);
 4.波特率需保持一致 
+
+5.开启can ： hal_can_start();
