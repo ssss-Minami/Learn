@@ -20,3 +20,6 @@
 	a(b)
 
 	结果：[1,2,7,9]'  （转置）
+
+10. size()返回两个值，维数和大小
+      numel（）返回大小   number of elements
