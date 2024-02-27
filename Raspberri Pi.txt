@@ -1,0 +1,2 @@
+1.在bullseye版本中，使用Picamera需要关闭leagecy camera（在raspi-config中），而使用openCV库则需打开
+2.综设时用户名：lenovo  key: 1

@@ -1,0 +1,22 @@
+绘制相关
+1.步骤：
+	1.所需QPainter   设置其笔刷等
+	2.虚函数paintEvent(QPaintEvent *event), 所有绘制操作需在其中，程序开始时、widget::update()时自动调用
+	3.paint event中painter.begin(), painter.end()
+
+
+蓝牙
+1.关于cmake
+https://blog.csdn.net/svfsvadfv/article/details/128755557
+注意添加的位置和项目名
+2.不用cmake就在qmake的.pro文件中声明使用蓝牙
+3.权限问题   在androidmanifest.xml中添加权限，每个安卓版本所需的权限不同
+	在实际运行中，若无动态权限请求，需手动将权限设置为无需询问即授予
+	蓝牙权限需要位置权限
+
+listwidget 
+1.listwidget中的item的data role 0 是item的名字，不要占用
+
+chart
+1.chartview基类为wigdet而非graphview， 且无需将widget升格为QChartView
+2.chart中添加axis和spline_series的顺序可能要留意

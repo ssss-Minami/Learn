@@ -1,3 +1,4 @@
+
 1. zeros(a,b)生成axb的全零矩阵， zeros(1, a)可生成一个一维的全0序列供函数stem使用
 
 2.序列a, a()中可以有多个值
@@ -23,3 +24,14 @@
 
 10. size()返回两个值，维数和大小
       numel（）返回大小   number of elements
+
+11.exp()与expm()效果不同，后者用于计算矩阵指数
+
+12.@   At.  The at symbol is used to create a function_handle.
+      It is also used at the beginning of directory names that contain
+      matlab object methods and the constructor for the object, e.g.
+      the directory @inline contains the constructor inline.m for the 
+      inline object and all methods for inline objects.
+	调用文件名.m内（文件名通常也是个函数）中的一切
+
+13.  绘出数组中的其中一个  plot(t, arr(:,x))   其中x为数组成员索引，从1起
