@@ -11,3 +11,5 @@ extern 标注的符号 在链接的时刻解析
    unsigned b;  b占用了32bit
 
 5.multiple defination可能为在头文件中定义在.c中调用造成的，修改方式为头文件extern，.c中定义
+
+6.常量表达式中不允许有函数调用-》可能需要在函数中完成此步
